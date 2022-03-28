@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins";
   font-weight: normal;
   font-style: normal;
   color: #888;
@@ -977,7 +977,7 @@ ol {
 
 .breadcrumbs .breadcrumb-nav li:after {
   content: "\ea5c";
-  font-family: lineIcons;
+  font-family: 'Poppins';
   font-size: 10px;
   position: absolute;
   top: 4px;
@@ -2013,9 +2013,9 @@ ol {
 }
 
 .hero-area .hero-content h1 {
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 800;
-  line-height: 50px;
+  line-height: 56px;
   color: #fff;
   text-shadow: 0px 3px 8px #00000017;
 }
@@ -2026,8 +2026,9 @@ ol {
 
 .hero-area .hero-content p {
   margin-top: 30px;
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
+  line-height: 34px;
 }
 
 .hero-area .hero-content .button {
@@ -2433,15 +2434,125 @@ ol {
 }
 
 /*======================================
+    custom To Action CSS
+========================================*/
+.custom-action {
+  background-color: #262626;
+  display: flex;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.custom-action .container-room {
+  width: 100%;
+}
+
+.container-room-text {
+  background-color: #262626;
+}
+
+.custom-action .cta-content {
+  padding: 30px 00px 0px 0px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .custom-action .cta-content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-action .cta-content {
+    padding: 0;
+  }
+}
+
+.custom-action .cta-content h2 {
+  color: #fff;
+  line-height: 50px;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: 'Poppins';
+  margin-top: 100px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .custom-action .cta-content h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-action .cta-content h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.custom-action .cta-content p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 34px;
+  font-family: 'Poppins';
+  opacity: 0.5;
+}
+
+.custom-action .download-button {
+  width: 120px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .custom-action .cta-content p {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-action .cta-content p {
+    padding: 0;
+  }
+}
+
+.custom-action .cta-content .button {
+  margin-top: 40px;
+}
+
+.custom-action .cta-content .button .btn {
+  background-color: #fff;
+  color: #4177F6;
+}
+
+.custom-action .cta-content .button .btn:hover {
+  color: #fff;
+  background-color: #081828;
+}
+
+/*======================================
     Call To Action CSS
 ========================================*/
 .call-action {
   background-color: #4177F6;
+  display: flex;
+  position: relative;
+}
+
+.call-action .container-room {
+  background-color: #4177F6;
+  width: 100%;
+}
+
+.container-room-text {
+  background-color: #EEF1F5;
+  padding-bottom: 20px;
 }
 
 .call-action .cta-content {
-  text-align: center;
-  padding: 0px 50px;
+  padding: 30px 00px 0px 0px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2456,12 +2567,21 @@ ol {
   }
 }
 
+.call-action .download-now-text {
+  color: #4177F6;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
 .call-action .cta-content h2 {
-  color: #fff;
+  color: #2F353D;
   line-height: 50px;
-  font-size: 38px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: bold;
   margin-bottom: 30px;
+  font-family: 'Poppins';
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2479,8 +2599,17 @@ ol {
 }
 
 .call-action .cta-content p {
-  color: #fff;
-  padding: 0px 50px;
+  color: #2F353D;
+  line-height: 34px;
+  font-family: 'Poppins';
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+.call-action .download-button {
+  width: 120px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2508,7 +2637,6 @@ ol {
   color: #fff;
   background-color: #081828;
 }
-
 /*======================================
 	Error 404 CSS
 ========================================*/
@@ -2590,7 +2718,7 @@ ol {
 	Footer CSS
 ========================================*/
 .footer {
-  background-color: #081828;
+  background-color: #fff;
   position: relative;
 }
 
@@ -2640,9 +2768,10 @@ ol {
 }
 
 .footer .single-footer.f-about p {
-  color: #D2D6DC;
+  color: #000;
   margin-top: 20px;
   font-size: 14px;
+  opacity: 0.7;
 }
 
 .footer .single-footer.f-about .social {
@@ -2727,7 +2856,7 @@ ol {
   font-weight: 600;
   display: block;
   margin-bottom: 35px;
-  color: #D2D6DC;
+  color: #4177F6;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

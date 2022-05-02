@@ -1632,7 +1632,8 @@ ol {
 
 @media (max-width: 767px) {
   .header .navbar-brand img {
-    width: 160px;
+    width: 130px;
+    padding: 5px;
   }
 }
 
@@ -1976,6 +1977,14 @@ ol {
   padding: 180px 0 120px 0;
   background: #4177F6;
 }
+.hero-area .hero-image img {
+  width: 100%;
+}
+
+.nuvem {
+  width: 200px; 
+  position: absolute;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area {
@@ -1983,16 +1992,6 @@ ol {
   }
 }
 
-@media (max-width: 767px) {
-  .hero-area {
-    padding: 120px 0 50px 0;
-  }
-}
-
-.hero-area .hero-image img {
-  width: 100%;
-}
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area .hero-image {
     margin-top: 40px;
@@ -2002,6 +2001,16 @@ ol {
 @media (max-width: 767px) {
   .hero-area .hero-image {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-area {
+    padding: 120px 0 50px 0;
+  }
+
+  .nuvem {
+    display: none;
   }
 }
 
@@ -2462,10 +2471,37 @@ ol {
   }
 }
 
+.menu-image {
+  height: 690px; 
+  width: 490px
+}
+
 @media (max-width: 767px) {
   .custom-action .cta-content {
     padding: 0;
   }
+
+  .container-room-text {
+    text-align: center;
+  }
+
+  .custom-action {
+    display: block;
+    text-align: center;
+  }
+
+  .menu-image {
+    text-align: center;
+    height: 390px; 
+    width: 250px;
+    margin-top: 40px;
+  }
+
+  .container-room {
+    text-align: center;
+  }
+
+
 }
 
 .custom-action .cta-content h2 {
@@ -2555,6 +2591,11 @@ ol {
   padding: 30px 00px 0px 0px;
 }
 
+.room-image {
+  height: 380px; 
+  width: 724px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .call-action .cta-content {
     padding: 0;
@@ -2564,6 +2605,15 @@ ol {
 @media (max-width: 767px) {
   .call-action .cta-content {
     padding: 0;
+  }
+
+  .call-action {
+    display: block;
+  }
+
+  .room-image {
+    height: 250px; 
+    width: 524px;
   }
 }
 
